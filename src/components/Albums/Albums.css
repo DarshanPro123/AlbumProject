@@ -1,0 +1,50 @@
+.albums {
+    width: 100%;
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.albums .card {
+    width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 330px;
+    border: 0.7px solid #ebeaea;
+}
+
+.albums .card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.albums .card img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.albums .card p {
+    font-size: 1.2rem;
+    color: rgb(6, 22, 34);
+    font-weight: 400;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.albums .card p::first-letter {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    color: rgb(23, 155, 255);
+    font-weight: 500;
+
+}
+
+.albums .card:hover p {
+    color: rgb(6, 22, 34);
+    text-decoration: underline;
+    cursor: pointer;
+}

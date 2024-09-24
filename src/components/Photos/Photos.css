@@ -1,0 +1,61 @@
+@keyframes changecolor {
+    0% {
+        color: rgb(140, 193, 250);
+    }
+
+    50% {
+        color: rgb(45, 136, 255);
+    }
+
+    100% {
+        color: rgb(0, 0, 0);
+    }
+}
+
+
+.imgs {
+    display: flex;
+    flex-direction: column;
+}
+
+.imgs h1 {
+    font-size: 2.4rem;
+    color: rgb(140, 193, 250);
+    font-style: italic;
+    animation: changecolor infinite 2s;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.images img {
+    width: 600px;
+    margin: 20px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #ebeaea;
+}
+
+.images img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+@media (max-width:430px) {
+    .imgs h1 {
+        font-size: 1rem;
+    }
+
+    .images img {
+        margin: 0 20px;
+        max-width: 420px;
+        width: 90%;
+        height: 200px;
+    }
+}

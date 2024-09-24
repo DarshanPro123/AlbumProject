@@ -1,0 +1,17 @@
+.gallary {
+    /* border: 1px solid #ffffff;
+    padding: 10px 20px; */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.gallary h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.4rem;
+    color: rgba(5, 4, 16, 0.867);
+    font-style: italic;
+    text-decoration: underline;
+    border: 1px solid #ffffff;
+    padding: 10px 0;
+}
